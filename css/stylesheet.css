@@ -80,7 +80,7 @@ input:focus {
 }
 
 .list .list-container ul {
-	width: 33%;
+	width: 25em;
 	height: 19em;
 	margin: 3em auto 0 auto;
 	padding: 0;
@@ -187,6 +187,7 @@ footer {
 	width: 100%;
 	height: 4.1em;
 	background-color: black;
+	position: absolute;
 }
 
 footer h2 {
