@@ -6,6 +6,7 @@ body {
 	background-image: url('http://bellsappliances.com/home/wp-content/uploads/2013/05/Counter-Depth-Refrigerator.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 	z-index: -1;
 }
 
@@ -18,13 +19,13 @@ body {
 	width: 100%;
 	height: 8.8em;
 	background-color: #6F99CB;
-	opacity: .5;
+	opacity: .9;
 	position: absolute;
-	top: 2px;
+	top: 0px;
 	left: 0;
 }
 
-.title-container {
+.container .title-container {
 	height: 8em;
 	width: 50%;
 	margin: auto;
@@ -33,7 +34,7 @@ body {
 	z-index: 9999;
 }
 
-.title-container i {
+.container .title-container i {
 	position: relative;
 	margin-top: .125em;
 	border: 2px ridge black;
@@ -43,11 +44,19 @@ body {
 	padding: .2em;
 }
 
-.title-container h1 {
-	margin-top: .25em;
+.container .title-container h1 {
+	margin-top: 0;
 	margin-bottom: .4em;
-	font-family: 'Lobster', "Verduna", 'sans-serif';
+	font-family: 'Pacifico', "Verduna", 'sans-serif';
 	font-weight: 300;
+}
+
+.container .title-container span {
+	padding-left: .25em;
+}
+
+.list {
+	font-family: 'Architects Daughter', 'Helvitica', 'serif';
 }
 
 .list form {
@@ -58,11 +67,16 @@ body {
 .list form input {
 	text-align: center;
 	width: 25em;
-	background-color: grey;
+	background-color: #edff8b;
+	padding: .2em;
+	border: solid 1.5px #6F99CB;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	padding: .1em;
+}
+
+input:focus {
+	outline: none;
 }
 
 .list .list-container ul {
@@ -71,7 +85,6 @@ body {
 	margin: 3em auto 0 auto;
 	padding: 0;
 	list-style-type: none;
-	overflow-y: scroll;
 }
 
 ::-webkit-scrollbar {
@@ -93,11 +106,23 @@ body {
 	text-align: left;
 	height: 1.125em;
 	margin: .4em 1em 0 .9em;
+	background-color: #edff8b; 
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
-	padding: .1em;
+	padding: .2em;
 	padding-left: .6em;
+	cursor: pointer;
+}
+
+#item-hover {
+	background-color: #b0c156;
+}
+
+#item-crossed,
+#item-hover-crossed {
+	background-color: #808f3b;
+	text-decoration: line-through;
 }
 
 .list .list-container li:first-child {
@@ -110,14 +135,65 @@ body {
 	right: .6em;
 }
 
-.list-button {
-	width: 33%;
-	margin: .25em auto 0 auto;
+.button {
 	text-align: center;
+	position: relative;
+	top: -5px;
+}
+
+.list-button {
+	-moz-box-shadow:inset 0px 0px 15px 3px #23395e;
+	-webkit-box-shadow:inset 0px 0px 15px 3px #23395e;
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2e466e), color-stop(1, #415989));
+	background:-moz-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:-webkit-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:-o-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:-ms-linear-gradient(top, #2e466e 5%, #415989 100%);
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e466e', endColorstr='#415989',GradientType=0);
+	background-color:#2e466e;
+	-moz-border-radius:17px;
+	-webkit-border-radius:17px;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:8px 18px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+
+.list-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #415989), color-stop(1, #2e466e));
+	background:-moz-linear-gradient(top, #415989 5%, #2e466e 100%);
+	background:-webkit-linear-gradient(top, #415989 5%, #2e466e 100%);
+	background:-o-linear-gradient(top, #415989 5%, #2e466e 100%);
+	background:-ms-linear-gradient(top, #415989 5%, #2e466e 100%);
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#415989', endColorstr='#2e466e',GradientType=0);
+	background-color:#415989;
+}
+
+.list-button:active {
+	position:relative;
+	top:1px;
+}
+
+footer {
+	width: 100%;
+	height: 4.1em;
+	background-color: black;
 }
 
 footer h2 {
 	text-align: right;
+	color: white;
 	float: right;
-	margin: .25em 1em 0 0;
+	margin: 0.4em 1em 0 0;
+	font-family: 'Raleway', 'Helvitica', 'serif';
+	font-size: 1.3em;
 }
