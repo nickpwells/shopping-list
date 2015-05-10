@@ -20,15 +20,16 @@
 			<input type="text" name="list-item" placeholder="Enter your items here">
 		</form>
 		<ul class="list-container">
-			<li class="list-item">
-				Chicken
-				<i class="fa fa-times"></i>
+			<li class="list-item">Not crossed, not hovered over
 			</li>
-			<li class="list-item">Beef</li>
-			<li class="list-item">Butter</li>
-			<li class="list-item">Flour</li>
-			<li class="list-item">Sugar</li>
+			<li class="list-item" style="background-color: red">Item being hovered<i class="fa fa-times"></i></li>
+			<li class="list-item" style="text-decoration: line-through; background-color: yellow;">Crossed off item</li>
+			<li class="list-item" style="text-decoration: line-through; background-color: yellow;">Crossede off item being hovered over<i class="fa fa-times"></i></li>
 		</ul>
+	</section>
+	<section class="list-buttons">
+		<button type="button" class="list-reset">Reset</button>
+		<button type="button" class="list-save">Save</button>
 	</section>
 </body>
 </html>

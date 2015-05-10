@@ -1,6 +1,6 @@
-* {
+/** {
 	border: 1px solid red;
-}
+}*/
 
 .container {
 	width: 100%;
@@ -56,21 +56,35 @@
 	list-style-type: none;
 }
 
+.list .list-container::-webkit-scrollbar {
+	width: 1em;
+}
+
 .list .list-container .list-item {
-	text-align: center;
+	position: relative;
+	text-align: left;
 	height: 1.125em;
 	margin: .4em 1em 0 .9em;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	padding: .1em;
+	padding-left: .6em;
 }
-
 
 .list .list-container li:first-child {
 	margin-top: .5em;
 }
 
 .list .list-container .fa-times {
-	padding-left: 3em;
+	position: relative;
+	float: right;
+	right: .6em;
 }
+
+.list-buttons {
+	width: 33%;
+	margin: .25em auto 0 auto;
+	text-align: center;
+}
+
