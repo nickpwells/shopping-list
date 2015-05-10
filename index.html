@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 	<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="container">
@@ -13,18 +14,21 @@
 			<i class="fa fa-cart-arrow-down fa-3x"></i>
 			<h1>shopping<span>LIST</span></h1>
 		</div>
+		<div class="background"></div>
 	</header>
 	<section class="list">
 		<form>
 			<input type="text" name="list-item" placeholder="Enter your items here">
 		</form>
-		<ul class="list-container">
-			<li class="list-item">Not crossed, not hovered over
-			</li>
-			<li class="list-item" style="background-color: red">Item being hovered<i class="fa fa-times"></i></li>
-			<li class="list-item" style="text-decoration: line-through; background-color: yellow;">Crossed off item</li>
-			<li class="list-item" style="text-decoration: line-through; background-color: yellow;">Crossede off item being hovered over<i class="fa fa-times"></i></li>
-		</ul>
+		<div class="list-container">
+			<ul>
+				<li class="list-item">Not crossed, not hovered over
+				</li>
+				<li class="list-item" style="background-color: red">Item being hovered<i class="fa fa-times"></i></li>
+				<li class="list-item" style="text-decoration: line-through; background-color: yellow;">Crossed off item</li>
+				<li class="list-item" style="text-decoration: line-through; background-color: yellow;">Crossede off item being hovered over<i class="fa fa-times"></i></li>
+			</ul>
+		</div>
 	</section>
 	<section class="list-button">
 		<button type="button" class="list-reset">Reset</button>
