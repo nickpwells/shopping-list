@@ -56,7 +56,12 @@ body {
 }
 
 .list {
+	text-align: center;
 	font-family: 'Architects Daughter', 'Helvitica', 'serif';
+}
+
+.list .count {
+	font-weight: bold;
 }
 
 .list form {
@@ -81,10 +86,11 @@ input:focus {
 
 .list .list-container ul {
 	width: 25em;
-	height: 19em;
-	margin: 3em auto 0 auto;
+	height: 19.3em;
+	margin: 2em auto 2em auto;
 	padding: 0;
 	list-style-type: none;
+	overflow: auto;
 }
 
 ::-webkit-scrollbar {
@@ -101,7 +107,8 @@ input:focus {
     -webkit-box-shadow: inset 0 0 6px; 
 }
 
-.list .list-container .list-item {
+.list .list-container .list-item,
+.item-crossed {
 	position: relative;
 	text-align: left;
 	height: 1.125em;
