@@ -115,12 +115,12 @@ input:focus {
 	cursor: pointer;
 }
 
-#item-hover {
+.list .list-container .list-item:hover {
 	background-color: #b0c156;
 }
 
-#item-crossed,
-#item-hover-crossed {
+.item-crossed,
+.item-hover-crossed {
 	background-color: #808f3b;
 	text-decoration: line-through;
 }
