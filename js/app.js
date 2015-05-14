@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	//Define checkmark
 	var xMark = '<i class="fa fa-times"></i>'
-	var count = 0;
+	count = 0;
 	
 	//Clears the placeholder when clicking the input
 	var listItem = document.getElementById("list-input");
@@ -16,6 +16,7 @@ $(document).ready(function(){
 			if (enter.keyCode == 13) {
 				enter.preventDefault();//Added to prevent page from reloading
 				addItem();
+				count = count + 1;
 			}
 		});
 	}
@@ -51,7 +52,7 @@ $(document).ready(function(){
 		$(this).parent().remove();
 	});
 
-	
+	console.log(count);
 	$('.list').append('<p class="count">'+'You currently have '+count+' items');
 
 });
