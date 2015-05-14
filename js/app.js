@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	//Define checkmark
-	var xMark = '<i class="fa fa-times"></i>'
-	count = 0;
+	var xMark = '<i class="fa fa-times"></i>';
+	var count = 0;
 	
 	//Clears the placeholder when clicking the input
 	var listItem = document.getElementById("list-input");
@@ -53,6 +53,5 @@ $(document).ready(function(){
 	});
 
 	console.log(count);
-	$('.list').append('<p class="count">'+'You currently have '+count+' items');
-
+	$('.count').replaceWith(count);
 });
