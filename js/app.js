@@ -17,8 +17,10 @@ $(document).ready(function(){
 				enter.preventDefault();//Added to prevent page from reloading
 				addItem();
 				count = count + 1;
-			}
-		});
+				console.log(count);
+				$('.count').replaceWith('<span class="count">'+count+'</span>');
+			}			
+		});	
 	}
 
 	//Adds item to user's list
@@ -52,6 +54,5 @@ $(document).ready(function(){
 		$(this).parent().remove();
 	});
 
-	console.log(count);
-	$('.count').replaceWith(count);
+	
 });
