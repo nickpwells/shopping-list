@@ -17,7 +17,6 @@ $(document).ready(function(){
 				enter.preventDefault();//Added to prevent page from reloading
 				addItem();
 				count = count + 1;
-				console.log(count);
 				$('.count').replaceWith('<span class="count">'+count+'</span>');
 			}			
 		});	
@@ -52,6 +51,14 @@ $(document).ready(function(){
 	$('ul').on('click', '.list-item > i', function(e){
 		e.preventDefault();
 		$(this).parent().remove();
+		count = count - 1;
+		$('.count').replaceWith('<span class="count">'+count+'</span>');
+	});
+	$('ul').on('click', '.item-crossed > i', function(e){
+		e.preventDefault();
+		$(this).parent().remove();
+		count = count - 1;
+		$('.count').replaceWith('<span class="count">'+count+'</span>');
 	});
 
 	
